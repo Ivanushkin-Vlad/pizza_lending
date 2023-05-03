@@ -16,17 +16,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <header>
-            <nav>
+            <nav data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                 <div class="pizzeria_name_logo">
                     <div class="pizzeria_logo">
                         <img src="image/Logo_pizza.png" alt="logo">
                     </div>
-                    <div class="pizzeria_name" >
+                    <div class="pizzeria_name" data-aos="fade-down">
                         Pizzanio
                     </div>
                 </div>
@@ -56,7 +57,8 @@
         </header>
         <main>
             <div class="container_menu">
-                <div class="left_item_menu">
+                <div class="left_item_menu" data-aos="fade-right" data-aos-anchor="#example-anchor"
+                    data-aos-offset="500" data-aos-duration="1500">
                     <div class="title_pizza_item">
                         <div class="title_pizza">
                             <h1>Pizza</h1>
@@ -70,14 +72,17 @@
                             <h3 class="lng-title">Найкраща піца в Києві - Pizza Special</h3>
                         </div>
                         <div class="description_item_pizza_element">
-                            <p class="lng-description">Дуже зручно, швидко, а головне смачно і корисно замовляти готові страви. Професійні кухарі, які “чаклують” на кухні люблять свою справу і роблять свої шедеври виключно зі свіжих складових.
+                            <p class="lng-description">Дуже зручно, швидко, а головне смачно і корисно замовляти готові
+                                страви. Професійні кухарі, які “чаклують” на кухні люблять свою справу і роблять свої
+                                шедеври виключно зі свіжих складових.
                             </p>
                         </div>
                         <div class="list_ingredients_pizza">
                             <ul>
                                 <li class="lng-personal">Професійний штат співробітників та найкращі в місті кухарі</li>
                                 <li class="lng-clients">Проведення різних акцій для клієнтів</li>
-                                <li class="lng-delivery">Оперативна доставка по місту не перевищує 40 хвилин, в ідеалі прагнемо до 30 хвилин, але бувають дуже завантажені дні</li>
+                                <li class="lng-delivery">Оперативна доставка по місту не перевищує 40 хвилин, в ідеалі
+                                    прагнемо до 30 хвилин, але бувають дуже завантажені дні</li>
                             </ul>
                         </div>
                     </div>
@@ -86,18 +91,21 @@
                     </div>
 
                 </div>
-                <div class="right_item_menu">
+                <div class="right_item_menu" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                    data-aos-offset="500" data-aos-duration="1500">
                     <div class="popup_lang">
-                            <div class="lang_ua"><p class="ua">ua</p> </div>
-                            <hr class="hr_line">
-                            <div class="lang_eng">
-                                <p class="en">en</p> 
-                            </div>
+                        <div class="lang_ua">
+                            <p class="ua">ua</p>
+                        </div>
+                        <hr class="hr_line">
+                        <div class="lang_eng">
+                            <p class="en">en</p>
+                        </div>
                     </div>
-                    
+
                     <div class="image_item_pizza">
                         <div class="radius_pizza">
-                            <img src="image/Chelentano_pizza.png" alt="">
+                            <img src="image/Chelentano_pizza.png" alt="logo" class="pizza_logo">
                         </div>
                     </div>
                     <div class="pizza_name_price">
@@ -112,7 +120,7 @@
                             <img src="image/right_buttoms.png" alt="">
                         </div>
                     </div>
-
+                    
                 </div>
             </div>
         </main>
@@ -142,8 +150,10 @@
         </footer>
     </div>
 
-<script src="script/lang.js"></script>
-<script src="script/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/lang.js"></script>
+    <script src="script/main.js"></script>
+
 
 
 </body>

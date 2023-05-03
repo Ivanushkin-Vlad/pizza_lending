@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+ }
+ body {
+    background: #f69a73;
+ }
+ .decor {
+    position: relative;
+    max-width: 500px;
+    margin: 50px auto 0;
+    background: #B83922;
+    border-radius: 30px;
+ }
+ .form-left-decoration, .form-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #f69a73;
+    border-radius: 20px;
+ }
+ .form-left-decoration {
+    bottom: 60px;
+    left: -30px;
+ }
+ .form-right-decoration {
+    top: 60px;
+    right: -30px;
+ }
+ .form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: #d0d8e0;
+ }
+ .form-left-decoration:before {
+    top: -20px;
+ }
+ .form-left-decoration:after {
+    top: 20px;
+    left: 10px;
+ }
+ .form-right-decoration:before {
+    top: -20px;
+    right: 0;
+ }
+ .form-right-decoration:after {
+    top: 20px;
+    right: 10px;
+ }
+ .circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(18, 14, 14);
+ }
+ .form-inner {
+    padding: 50px;
+ }
+ .form-inner input, .form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #d0d8e0;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+ }
+ .form-inner input[type="submit"] {
+    margin-top: 30px;
+    background: #f69a73;
+    border-bottom: 4px solid #d87d56;
+    color: white;
+    font-size: 14px;
+    font-family: 'Permanent Marker', cursive;
+ }
+ .form-inner textarea {
+    resize: none;
+ }
+ .form-inner h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: white
+ }
+
+ .trecker{
+    width: 60%;
+ }
+ .form-client{
+    width: 100%;
+ }
+ .item_form{
+    width: 35%;
+ }
+ .title-order-pizza{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    line-height: 277px;
+    letter-spacing: 5%;
+    font-size: 184px;
+    margin: 0px;
+    color: white;
+}
+.title-order-special{
+    font-size: 84px;
+    font-family: "Permanent Marker", cursive;
+    margin-top: -60px;
+    color: #B83922;
+}

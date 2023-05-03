@@ -1,0 +1,461 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f69a73;
+}
+
+.decor {
+  position: relative;
+  max-width: 500px;
+  margin: 50px auto 0;
+  background: #B83922;
+  border-radius: 30px;
+}
+
+.form-left-decoration, .form-right-decoration {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: #f69a73;
+  border-radius: 20px;
+}
+
+.form-left-decoration {
+  bottom: 60px;
+  left: -30px;
+}
+
+.form-right-decoration {
+  top: 60px;
+  right: -30px;
+}
+
+.form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: #d0d8e0;
+}
+
+.form-left-decoration:before {
+  top: -20px;
+}
+
+.form-left-decoration:after {
+  top: 20px;
+  left: 10px;
+}
+
+.form-right-decoration:before {
+  top: -20px;
+  right: 0;
+}
+
+.form-right-decoration:after {
+  top: 20px;
+  right: 10px;
+}
+
+.circle {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(18, 14, 14);
+}
+
+.form-inner {
+  padding: 50px;
+}
+
+.form-inner input, .form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background: #d0d8e0;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-inner input[type=submit] {
+  margin-top: 30px;
+  background: #f69a73;
+  border-bottom: 4px solid #d87d56;
+  color: white;
+  font-size: 14px;
+  font-family: "Permanent Marker", cursive;
+}
+
+.form-inner textarea {
+  resize: none;
+}
+
+.form-inner h3 {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+}
+
+.trecker {
+  width: 60%;
+}
+
+.form-client {
+  width: 100%;
+}
+
+.item_form {
+  width: 35%;
+}
+
+.title-order-pizza {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  line-height: 277px;
+  letter-spacing: 5%;
+  font-size: 184px;
+  margin: 0px;
+  color: white;
+}
+
+.title-order-special {
+  font-size: 84px;
+  font-family: "Permanent Marker", cursive;
+  margin-top: -60px;
+  color: #B83922;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 1920px;
+}
+.container header {
+  background-color: #EC4D2F;
+  position: relative;
+  z-index: 1;
+  height: 100px;
+}
+.container header::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0px;
+  z-index: -1;
+  width: 25%;
+  height: 74px;
+  background-color: #B83922;
+  border-radius: 0px 30px 30px 0px;
+}
+.container header::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 0px;
+  z-index: -1;
+  width: 25%;
+  height: 74px;
+  background-color: #B83922;
+  border-radius: 30px 0px 0px 30px;
+}
+.container header .pizzeria_name_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 80px;
+}
+.container nav {
+  font-family: "Anton", sans-serif;
+  max-width: 1375px;
+  margin: 0px auto;
+  padding: 13px 0px 13px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container .pizzeria_name {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 5%;
+  line-height: 130%;
+}
+.container .pizza_nav_menu {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 130%;
+  display: flex;
+  gap: 50px;
+  height: 80px;
+  align-items: center;
+}
+.container .pizza_nav_menu a {
+  text-decoration: none;
+  color: white;
+}
+.container .pizza_nav_menu a:hover {
+  color: #B83922;
+}
+.container .logo_language_menu {
+  cursor: pointer;
+}
+.container .pizza_language {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  width: 10%;
+  justify-content: space-around;
+}
+
+main {
+  background-color: #1D1B2B;
+}
+main .container_menu {
+  max-width: 1375px;
+  margin: auto;
+  display: flex;
+  padding-top: 165px;
+  padding-bottom: 100px;
+}
+main .description_item_menu {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+main .description_item_menu .description_pizza {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+main .button_menu {
+  padding-top: 40px;
+}
+main .button_menu .btn_m {
+  background-color: rgba(236, 77, 47, 0.3607843137);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 16px;
+  border: 2px solid #EC4D2F;
+  border-radius: 20px;
+  cursor: pointer;
+}
+main .button_menu .btn_m:hover {
+  background-color: #EC4D2F;
+}
+main .button_menu .btn_m:active {
+  background-color: rgba(236, 77, 47, 0.3607843137);
+}
+
+.title_pizza h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  line-height: 277px;
+  letter-spacing: 5%;
+  font-size: 184px;
+  margin: 0px;
+  color: white;
+}
+
+.title_special {
+  text-align: center;
+}
+
+.title_special h2 {
+  letter-spacing: 5%;
+  font-size: 84px;
+  font-family: "Permanent Marker", cursive;
+  margin-top: -60px;
+  color: #B83922;
+}
+
+.list_ingredients_pizza ul li {
+  margin-top: 10px;
+}
+
+.right_item_menu {
+  text-align: center;
+  position: relative;
+}
+.right_item_menu .radius_pizza {
+  position: relative;
+  z-index: 1;
+}
+.right_item_menu .radius_pizza::before {
+  position: absolute;
+  content: "10%";
+  height: 160px;
+  width: 160px;
+  background-image: url(../image/sale_pizza_percent.png);
+  font-size: 48px;
+  font-family: "Permanent Marker", cursive;
+  color: #B83922;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  top: -51px;
+  left: -40px;
+}
+.right_item_menu .image_item_pizza {
+  border: 7px solid #EC4D2F;
+  border-radius: 50%;
+}
+.right_item_menu .pizza_name {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 37px 0px 16px 0px;
+}
+.right_item_menu .pizza_price {
+  color: #EC4D2F;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 29px;
+}
+.right_item_menu .pizza_buttoms {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.right_item_menu .pizza_buttoms .buttoms_left {
+  width: 87px;
+  height: 47px;
+  background-color: #B83922;
+  border-radius: 25px 0px 0px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.right_item_menu .pizza_buttoms .buttoms_left:hover {
+  background-color: #EC4D2F;
+}
+.right_item_menu .pizza_buttoms .buttoms_left:active {
+  background-color: #B83922;
+}
+.right_item_menu .pizza_buttoms .buttoms_right {
+  width: 87px;
+  height: 47px;
+  width: 87px;
+  height: 47px;
+  background-color: #B83922;
+  border-radius: 0px 25px 25px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.right_item_menu .pizza_buttoms .buttoms_right:hover {
+  background-color: #B83922;
+}
+.right_item_menu .pizza_buttoms .buttoms_right:active {
+  background-color: #EC4D2F;
+}
+
+footer {
+  background-color: #B83922;
+}
+footer .container_footer {
+  max-width: 1375px;
+  margin: 0px auto;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .container_footer .nav_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .container_footer .nav_footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .container_footer .nav_footer a:hover {
+  color: #EC4D2F;
+}
+footer .container_footer .logo_footer {
+  font-family: "Anton", sans-serif;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+footer .container_footer .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .container_footer .contacts a {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  opacity: 1 !important;
+  pointer-events: all !important;
+  transition: 1s all !important;
+}
+
+.popup_lang {
+  position: absolute;
+  top: -160px;
+  left: 300px;
+  background: linear-gradient(rgba(236, 77, 47, 0.231372549) 0%, rgba(236, 77, 47, 0.2509803922) 17%);
+  height: 149px;
+  width: 249px;
+  border: 2px solid #EC4D2F;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s all;
+}
+.popup_lang .lang_ua {
+  padding-top: 10%;
+}
+.popup_lang .lang_ua:hover {
+  color: #EC4D2F;
+}
+.popup_lang .lang_eng:hover {
+  color: #EC4D2F;
+}
+.popup_lang .hr_line {
+  width: 149px;
+  background-color: #EC4D2F;
+}/*# sourceMappingURL=style.css.map */

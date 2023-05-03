@@ -1,0 +1,378 @@
+@import "order";
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container {
+    max-width: 1920px;
+
+    header {
+        background-color: #EC4D2F;
+        position: relative;
+        z-index: 1;
+        height: 100px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 13px;
+            left: 0px;
+            z-index: -1;
+
+            width: 25%;
+            height: 74px;
+            background-color: #B83922;
+            border-radius: 0px 30px 30px 0px;
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 13px;
+            right: 0px;
+            z-index: -1;
+            width: 25%;
+            height: 74px;
+            background-color: #B83922;
+            border-radius: 30px 0px 0px 30px;
+        }
+
+        .pizzeria_name_logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 80px;
+        }
+    }
+
+    nav {
+        font-family: "Anton", sans-serif;
+        max-width: 1375px;
+        margin: 0px auto;
+        padding: 13px 0px 13px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+
+    }
+
+    .pizzeria_name {
+        font-weight: 400;
+        font-size: 24px;
+        color: white;
+        letter-spacing: 5%;
+        line-height: 130%;
+
+
+    }
+
+    .pizza_nav_menu {
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        line-height: 130%;
+        display: flex;
+        gap: 50px;
+        height: 80px;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: #B83922;
+
+            }
+        }
+    }
+    .logo_language_menu{
+        cursor: pointer;
+    }
+    .pizza_language {
+        display: flex;
+        height: 80px;
+        align-items: center;
+        width: 10%;
+        justify-content: space-around;
+    }
+}
+
+main {
+    background-color: #1D1B2B;
+
+    .container_menu {
+        max-width: 1375px;
+        margin: auto;
+        display: flex;
+        padding-top: 165px;
+        padding-bottom: 100px;
+    }
+
+    .description_item_menu {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        color: white;
+
+        .description_pizza {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+    }
+
+    .button_menu {
+        padding-top: 40px;
+
+        .btn_m {
+            background-color: #ec4d2f5c;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            padding: 16px;
+            border: 2px solid #EC4D2F;
+            border-radius: 20px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #EC4D2F;
+            }
+
+            &:active {
+                background-color: #ec4d2f5c;
+            }
+        }
+
+    }
+}
+
+.title_pizza h1 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    line-height: 277px;
+    letter-spacing: 5%;
+    font-size: 184px;
+    margin: 0px;
+    color: white;
+}
+
+.title_special {
+    text-align: center;
+}
+
+.title_special h2 {
+    letter-spacing: 5%;
+    font-size: 84px;
+    font-family: 'Permanent Marker', cursive;
+    margin-top: -60px;
+    color: #B83922;
+
+}
+
+.list_ingredients_pizza ul li {
+    margin-top: 10px;
+}
+
+
+
+.right_item_menu {
+    text-align: center;
+    position: relative;
+
+    .radius_pizza {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            position: absolute;
+            content: "10%";
+            height: 160px;
+            width: 160px;
+            background-image: url(../image/sale_pizza_percent.png);
+            font-size: 48px;
+            font-family: 'Permanent Marker', cursive;
+            color: #B83922;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
+            top: -51px;
+            left: -40px;
+        }
+    }
+
+    .image_item_pizza {
+        border: 7px solid #EC4D2F;
+        border-radius: 50%;
+    }
+
+    .pizza_name {
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        margin: 37px 0px 16px 0px;
+    }
+
+    .pizza_price {
+        color: #EC4D2F;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 29px;
+
+    }
+
+    .pizza_buttoms {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+
+        .buttoms_left {
+            width: 87px;
+            height: 47px;
+            background-color: #B83922;
+            border-radius: 25px 0px 0px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+
+            &:hover {
+                background-color: #EC4D2F;
+            }
+
+            &:active {
+                background-color: #B83922;
+            }
+        }
+
+        .buttoms_right {
+            width: 87px;
+            height: 47px;
+            width: 87px;
+            height: 47px;
+            background-color: #B83922;
+            border-radius: 0px 25px 25px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+
+            &:hover {
+                background-color: #B83922;
+            }
+
+            &:active {
+                background-color: #EC4D2F;
+            }
+        }
+    }
+
+}
+
+footer {
+    background-color: #B83922;
+
+    .container_footer {
+        max-width: 1375px;
+        margin: 0px auto;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .nav_footer {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: #EC4D2F;
+                    ;
+                }
+            }
+        }
+
+
+
+        .logo_footer {
+            font-family: "Anton", sans-serif;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+
+    }
+}
+
+.active{
+    opacity: 1 !important;
+    pointer-events: all !important;
+    transition: 1s all !important;
+    
+}
+
+.popup_lang {
+    position: absolute;
+    top: -160px;
+    left: 300px;
+    background: linear-gradient(#ec4d2f3b 0%, #ec4d2f40 17%);
+    height: 149px;
+    width: 249px;
+    border: 2px solid #EC4D2F;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s all;
+
+    .lang_ua{
+        padding-top: 10%;
+        &:hover{
+            color: #EC4D2F;
+        }
+    }
+    .lang_eng{
+        &:hover{
+            color: #EC4D2F;
+        }
+    }
+    .hr_line{
+        width: 149px;
+        background-color: #EC4D2F;
+    }
+}
